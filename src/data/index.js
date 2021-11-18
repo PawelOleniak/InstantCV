@@ -6,8 +6,17 @@ import { BsGithub, BsFillBootstrapFill, BsPhone } from 'react-icons/bs';
 import Flags from 'country-flag-icons/react/3x2';
 
 const Me = 'Paweł Oleniak';
-const introduction = ['Profile', ''];
-const education = ['Education', 'AGH University of Science and Technology', '2020- present'];
+const introduction = [
+  'Profile',
+  "I'm a aspiring frontend developer, who wants to develop and gain experience. I started from making simple sites with HTML and JS. Later continued by learning React. Now I'm working to grasp D3 with purpose of creating own Geneaological Tree Component",
+];
+const availability = ['Availability:', 'Immediately'];
+const education = [
+  'Education',
+  'AGH University of Science and Technology',
+  ['Automatyka I Robotyka', '2019-2021', 'Resignation due to a change of interests'],
+  ['Inżynieria Obliczeniowa', '2020- present'],
+];
 
 const React = ['React', <DiReact color={'#00bcd4'} />];
 const wellKnownSkills = [
@@ -64,4 +73,4 @@ export const personalData = [
   ['Adress', 'Witolda Budryka 1,30-072 Kraków'],
   ['Date of Birth', '14.01.2000'],
 ];
-export const introSection = [Me, introduction, education];
+export const introSection = [Me, introduction, availability, education];

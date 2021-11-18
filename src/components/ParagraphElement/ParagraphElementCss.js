@@ -15,6 +15,14 @@ export const Section = styled.div`
   }
   > :nth-child(3) {
     text-align: center;
+    font-style: italic;
+    margin-top: ${({ skillSection }) => (skillSection ? '10px' : '20px')};
+    margin-left: ${({ skillSection }) => (skillSection ? '5px' : ' 35px')};
+    font-weight: ${({ skillSection }) => (skillSection ? '500' : ' 600')};
+  }
+  > :nth-child(4) {
+    text-align: center;
+    margin-top: ${({ skillSection }) => (skillSection ? '10px' : '30px')};
     font-weight: ${({ skillSection }) => (skillSection ? '500' : ' 1000')};
   }
 `;

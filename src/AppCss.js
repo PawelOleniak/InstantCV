@@ -18,7 +18,7 @@ export const MainContainer = styled.div`
   width: 90%;
   height: 95%;
   column-gap: 5px;
-
+  max-width: 1100px;
   > * {
     font-family: 'Montserrat', sans-serif;
     transition: 1s;
@@ -28,6 +28,7 @@ export const MainContainer = styled.div`
     background-color: #373a86;
   }
   > :nth-child(2) {
+    color: black;
     background-color: white;
   }
 `;

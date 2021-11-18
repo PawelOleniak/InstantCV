@@ -1,6 +1,5 @@
 import { DetailsElement } from 'components';
 import React from 'react';
-import ReactTooltip from 'react-tooltip';
 import { DetailsContainer, DetailsBox } from './DetailSectionCss';
 import { detailsElements, detailsHeaders } from 'data';
 const DetailSection = ({ refD }) => {
