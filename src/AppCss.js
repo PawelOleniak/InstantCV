@@ -8,7 +8,7 @@ export const MarginContainer = styled.div`
   background-color: #333;
   flex-direction: column;
   width: 100vw;
-  height: 100vh;
+  height: 125vh;
 `;
 
 export const MainContainer = styled.div`
