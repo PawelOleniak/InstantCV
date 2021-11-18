@@ -1,5 +1,6 @@
 {
   "name": "instant_cv",
+  "homepage": "https://paweloleniak.github.io/InstantCV",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
