@@ -1,6 +1,6 @@
 import { IoLogoJavascript, IoLogoCss3, IoLogoHtml5 } from 'react-icons/io';
-import { DiUbuntu, DiReact, DiPython, DiJava } from 'react-icons/di';
-import { SiStyledcomponents } from 'react-icons/si';
+import { DiUbuntu, DiReact, DiPython, DiJava, DiDatabase } from 'react-icons/di';
+import { SiStyledcomponents, SiFirebase } from 'react-icons/si';
 import { AiOutlineBarChart } from 'react-icons/ai';
 import { BsGithub, BsFillBootstrapFill, BsPhone } from 'react-icons/bs';
 import Flags from 'country-flag-icons/react/3x2';
@@ -40,6 +40,8 @@ const languages = [
 const otherLangauageDetails = [
   ['Python', <DiPython color={'#4B8BBE'} />],
   ['Java', <DiJava color={'#f89820 '} />],
+  ['Firebase', <SiFirebase color={'orange '} />],
+  ['SQL', <DiDatabase color={'#orange '} />],
 ];
 const familiarDetails = [
   ['D3.js', <AiOutlineBarChart color={'#4B8BBE'} />],
