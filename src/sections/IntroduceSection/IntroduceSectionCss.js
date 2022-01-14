@@ -4,13 +4,13 @@ export const IntroduceContainer = styled.div`
   font-style: italic;
   > :nth-child(1) {
     display: flex;
-    margin-top: 5px;
+    margin: 5px 10px 0 0;
     a:link,
     a:visited {
       color: inherit;
     }
   }
   h1 {
-    margin: 15px 30px 10px 20px;
+    margin: ${({ isMobile }) => (isMobile ? `15px 10px 10px 10px` : `15px 30px 10px 20px`)};
   }
 `;

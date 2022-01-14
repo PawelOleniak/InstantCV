@@ -30,7 +30,7 @@ const SoftwareSkills = [...wellKnownSkills, React];
 const otherITSkills = [
   ['Linux terminal', <DiUbuntu color={'#dd4814'} />],
   ['Git', <BsGithub color={'#222'} />],
-  ['RWD', <BsPhone size={40} color={'#222'} />],
+  ['RWD', <BsPhone color={'#222'} />],
 ];
 
 const languages = [
@@ -41,14 +41,14 @@ const otherLangauageDetails = [
   ['Python', <DiPython color={'#4B8BBE'} />],
   ['Java', <DiJava color={'#f89820 '} />],
   ['Firebase', <SiFirebase color={'orange '} />],
-  ['SQL', <DiDatabase color={'#orange '} />],
+  ['SQL', <DiDatabase color={'lightgray '} />],
 ];
 const familiarDetails = [
   ['D3.js', <AiOutlineBarChart color={'#4B8BBE'} />],
   [
     'React Bootstrap',
     <>
-      <BsFillBootstrapFill size={30} color={'0275d8 '} /> <DiReact size={30} color={'#00bcd4'} />
+      <BsFillBootstrapFill color={'0275d8 '} /> <DiReact color={'#00bcd4'} />
     </>,
   ],
 ];

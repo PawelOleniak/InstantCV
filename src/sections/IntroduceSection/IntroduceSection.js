@@ -4,12 +4,12 @@ import { BsGithub } from 'react-icons/bs';
 import { IntroduceContainer } from './IntroduceSectionCss';
 import { introSection } from 'data';
 import { ParagraphElement } from 'components';
-const IntroduceSection = () => {
+const IntroduceSection = ({ isMobile }) => {
   const paragraphs = introSection.slice(1);
 
   return (
     <>
-      <IntroduceContainer>
+      <IntroduceContainer isMobile={isMobile}>
         <div>
           <h1>{introSection[0]}</h1>
           <a target={'blank'} href="https://github.com/PawelOleniak">

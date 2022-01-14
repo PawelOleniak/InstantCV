@@ -10,11 +10,11 @@ export const SectionContainer = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     > :nth-child(1) {
-      margin: 10px 0 17px 15px;
+      margin: ${({ isMobile }) => (isMobile ? `10px 0 17px 5px` : `10px 0 17px 15px`)};
     }
     > :nth-child(2) {
       font-style: italic;
-      margin-left: 30px;
+      margin-left: ${({ isMobile }) => (isMobile ? `10px` : `30px`)};
     }
     > :nth-child(3) {
       display: flex;

@@ -1,13 +1,16 @@
-import React from 'react';
-import { Section } from './ParagraphElementCss';
+import React, { useContext } from 'react';
+import { DefaultSection, SkillSection } from './ParagraphElementCss';
+import { Context } from 'context';
+const ParagraphElement = ({ elements, isSkillSection }) => {
+  const { isMobile, isBig } = useContext(Context);
 
-const ParagraphElement = ({ elements, skillSection }) => {
+  const Section = isSkillSection ? SkillSection : DefaultSection;
   const paragraph = elements.map((el) => (
-    <Section skillSection={skillSection}>
+    <Section isMobile={isMobile} isBig={isBig}>
       <h3>{el[0]}</h3>
       <span>{el[1]}</span>
       {el[2] ? (
-        skillSection ? (
+        isSkillSection ? (
           <span>{el[2]}</span>
         ) : (
           <span>
@@ -28,7 +31,7 @@ const ParagraphElement = ({ elements, skillSection }) => {
       ) : null}
     </Section>
   ));
-  return <>{paragraph}</>;
+  return paragraph;
 };
 
 export default ParagraphElement;

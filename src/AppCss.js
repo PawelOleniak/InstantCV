@@ -1,4 +1,13 @@
-import styled from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
+export const GlobalStyle = createGlobalStyle`
+  body{
+    font-size: ${({ theme, isMobile, isBig }) =>
+      isBig ? `${theme.bigFontSize}px` : isMobile ? `${theme.mobileFontSize}px` : `${theme.normalFontSize}px`};
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+  }
+ `;
+
 export const MarginContainer = styled.div`
   display: flex;
   align-items: center;
@@ -7,23 +16,15 @@ export const MarginContainer = styled.div`
   justify-items: center;
   background-color: #333;
   flex-direction: column;
-  width: 100vw;
-  height: 125vh;
 `;
 
 export const MainContainer = styled.div`
   display: grid;
   grid-auto-columns: 1.4fr 3fr;
   grid-auto-flow: column;
-  width: 90%;
-  height: 95%;
+
   column-gap: 5px;
   max-width: 1100px;
-  > * {
-    font-family: 'Montserrat', sans-serif;
-    transition: 1s;
-    color: whitesmoke;
-  }
   > :nth-child(1) {
     background-color: #373a86;
   }

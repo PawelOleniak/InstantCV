@@ -1,28 +1,43 @@
 import styled from 'styled-components';
-export const Section = styled.div`
+export const SkillSection = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: ${({ skillSection }) => (skillSection ? '10px' : '50px')};
-  font-size: ${({ skillSection }) => (skillSection ? '13px' : '20px')};
+  margin-top: 10px;
 
   > :nth-child(1) {
-    margin-left: ${({ skillSection }) => (skillSection ? '5px' : '15px')};
+    margin-left: 5px;
   }
   > :nth-child(2) {
-    margin-left: ${({ skillSection }) => (skillSection ? '5px' : ' 25px')};
+    margin-left: 5px;
     margin-bottom: 10px;
   }
   > :nth-child(3) {
     text-align: center;
     font-style: italic;
-    margin-top: ${({ skillSection }) => (skillSection ? '10px' : '20px')};
-    margin-left: ${({ skillSection }) => (skillSection ? '5px' : ' 35px')};
-    font-weight: ${({ skillSection }) => (skillSection ? '500' : ' 600')};
+    margin-top: 10px;
+    font-weight: 500;
   }
   > :nth-child(4) {
     text-align: center;
-    margin-top: ${({ skillSection }) => (skillSection ? '10px' : '30px')};
-    font-weight: ${({ skillSection }) => (skillSection ? '500' : ' 1000')};
+    margin-top: 10px;
+  }
+`;
+
+export const DefaultSection = styled(SkillSection)`
+  > :nth-child(1) {
+    margin-left: 15px;
+  }
+  > :nth-child(2) {
+    margin-left: ${({ theme, isMobile }) => (isMobile ? `${theme.mobileMargin * 2}px` : `${theme.normalMargin * 2}px`)};
+    margin-bottom: 10px;
+  }
+  > :nth-child(3) {
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  > :nth-child(4) {
+    margin-top: 30px;
+    font-weight: 1000;
   }
 `;
