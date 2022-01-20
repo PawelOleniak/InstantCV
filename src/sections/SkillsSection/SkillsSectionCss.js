@@ -24,6 +24,10 @@ export const SectionContainer = styled.div`
       border: solid 1px #272a76;
       padding: 2px;
       border-radius: 10px;
+      > * {
+        text-decoration: none;
+        color: whitesmoke;
+      }
       :hover {
         transition: 0.2s;
         background-color: #272a76;

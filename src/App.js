@@ -4,6 +4,7 @@ import { DetailSection, IntroduceSection, SkillsSection } from 'sections';
 import { ThemeProvider } from 'styled-components';
 import DeviceContextProvider, { Context } from 'context';
 import theme from 'utils/theme';
+
 function App() {
   const detailRef = useRef(null);
   const { isMobile, isBig } = useContext(Context);
@@ -13,7 +14,7 @@ function App() {
       <MarginContainer isMobile={isMobile}>
         <MainContainer>
           <SkillsSection refD={detailRef} />
-          <IntroduceSection isMobile={isMobile} />
+          <IntroduceSection />
         </MainContainer>
       </MarginContainer>
       <DetailSection refD={detailRef}></DetailSection>

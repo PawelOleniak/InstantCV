@@ -1,10 +1,11 @@
-import { DetailsElement } from 'components';
+import { Skills } from 'components';
 import React, { useContext } from 'react';
 import { DetailsContainer, DetailsBox } from './DetailSectionCss';
 import { detailsElements, detailsHeaders } from 'data';
 import { Context } from 'context';
 import { useTheme } from 'styled-components';
 import { IconContext } from 'react-icons/lib';
+import ReactTooltip from 'react-tooltip';
 const DetailSection = ({ refD }) => {
   const { isMobile } = useContext(Context);
   const theme = useTheme();
@@ -12,14 +13,12 @@ const DetailSection = ({ refD }) => {
   const subSections = detailsElements.map((el, i) => (
     <>
       <div className="header">
-        <span data-multiline={true} data-tip={detailsHeaders[i][1]}>
-          {detailsHeaders[i][0]}
+        <span data-multiline={true} data-tip={detailsHeaders[i].description}>
+          {detailsHeaders[i].header}
         </span>{' '}
-        {isMobile & (detailsHeaders[i][0].length > 10) ? <div>skills</div> : 'skills'}
+        {isMobile & (detailsHeaders[i].description.length > 10) ? <div>skills</div> : 'skills'}
       </div>
-      <>
-        <DetailsElement detailsElements={el} />
-      </>
+      <Skills elements={el} isDetail={true} />
     </>
   ));
   return (
@@ -28,6 +27,7 @@ const DetailSection = ({ refD }) => {
         <div ref={refD} />
         <span>Skills</span>
         <DetailsBox isMobile={isMobile}>{subSections}</DetailsBox>
+        <ReactTooltip place={isMobile ? 'right' : 'top'} type="info" effect="float" />
       </DetailsContainer>
     </IconContext.Provider>
   );

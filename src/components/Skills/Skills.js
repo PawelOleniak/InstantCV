@@ -1,35 +1,26 @@
-import React from 'react';
-import { SkillsContainer, Inline } from './SkillsCss';
+import React, { useContext } from 'react';
+import { SkillsContainer, InlineSkill, Detail } from './SkillsCss';
 import { MdReadMore } from 'react-icons/md';
+import { Context } from 'context';
 
-const Skills = ({ title, elements, refD, details }) => {
+const Skills = ({ title, elements, refD, isDetail }) => {
   const executeScroll = () => refD.current.scrollIntoView({ behavior: 'smooth' });
-  const rows = elements.length
+  const { isMobile, isBig } = useContext(Context);
+  const TypeOfElement = isDetail ? Detail : InlineSkill;
+  const skillRows = elements.length
     ? elements.map((el) => (
-        <Inline>
-          <span>{el[1]}</span>
-          <div>{el[0]}</div>
-        </Inline>
+        <TypeOfElement isMobile={isMobile} isBig={isBig}>
+          <div>{el.icon}</div>
+          <div>{el.skillName}</div>
+        </TypeOfElement>
       ))
-    : elements;
+    : null;
+
   return (
-    <SkillsContainer details>
-      {details ? (
-        <>
-          <div>{rows}</div>
-          <div>{title}</div>
-        </>
-      ) : (
-        <>
-          <span className="sectionHeader">{title}</span>
-          <div>{rows}</div>
-        </>
-      )}
-      {title === 'Software Skills' ? (
-        <>
-          <MdReadMore data-tip="More Details" onClick={executeScroll} />
-        </>
-      ) : null}
+    <SkillsContainer details={isDetail}>
+      {title ? <span className="sectionHeader">{title}</span> : null}
+      <div className={isDetail ? 'detailSection' : null}>{skillRows}</div>
+      {title === 'Software Skills' ? <MdReadMore data-tip="More Details" onClick={executeScroll} /> : null}
     </SkillsContainer>
   );
 };

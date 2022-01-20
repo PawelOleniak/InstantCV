@@ -22,9 +22,10 @@ export const MainContainer = styled.div`
   display: grid;
   grid-auto-columns: 1.4fr 3fr;
   grid-auto-flow: column;
-
+  margin-top: 15px;
   column-gap: 5px;
   max-width: 1100px;
+  margin-bottom: 60px;
   > :nth-child(1) {
     background-color: #373a86;
   }
