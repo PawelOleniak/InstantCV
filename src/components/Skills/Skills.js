@@ -9,7 +9,7 @@ const Skills = ({ title, elements, refD, isDetail }) => {
   const TypeOfElement = isDetail ? Detail : InlineSkill;
   const skillRows = elements.length
     ? elements.map((el) => (
-        <TypeOfElement isMobile={isMobile} isBig={isBig}>
+        <TypeOfElement key={el.skillName} isMobile={isMobile} isBig={isBig}>
           <div>{el.icon}</div>
           <div>{el.skillName}</div>
         </TypeOfElement>
@@ -17,7 +17,7 @@ const Skills = ({ title, elements, refD, isDetail }) => {
     : null;
 
   return (
-    <SkillsContainer details={isDetail}>
+    <SkillsContainer details={isDetail} isMobile={isMobile} isBig={isBig}>
       {title ? <span className="sectionHeader">{title}</span> : null}
       <div className={isDetail ? 'detailSection' : null}>{skillRows}</div>
       {title === 'Software Skills' ? <MdReadMore data-tip="More Details" onClick={executeScroll} /> : null}

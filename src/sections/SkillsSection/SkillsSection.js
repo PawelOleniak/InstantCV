@@ -11,9 +11,11 @@ const SkillsSection = ({ refD }) => {
   const theme = useTheme();
   const iconSize = isMobile ? `${theme.normalFontSize}px` : `${theme.normalFontSize * 2}px`;
   const infoParagraphs = personalData.map((el) => (
-    <ParagraphElement header={el.header} paragraphs={el.elements} isSkillSection={true} />
+    <ParagraphElement key={el.header} header={el.header} paragraphs={el.elements} isSkillSection={true} />
   ));
-  const skillsParagraphs = skillsElements.map((el) => <Skills refD={refD} title={el.header} elements={el.skills} />);
+  const skillsParagraphs = skillsElements.map((el) => (
+    <Skills key={el.header} refD={refD} title={el.header} elements={el.skills} />
+  ));
 
   return (
     <IconContext.Provider value={{ size: iconSize }}>

@@ -16,6 +16,7 @@ export const MarginContainer = styled.div`
   justify-items: center;
   background-color: #333;
   flex-direction: column;
+  overflow-x: hidden;
 `;
 
 export const MainContainer = styled.div`

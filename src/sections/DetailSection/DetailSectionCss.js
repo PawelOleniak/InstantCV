@@ -5,7 +5,6 @@ export const DetailsContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #333;
   color: white;
   > span {
     font-size: ${({ isMobile }) => (isMobile ? `2rem` : `4rem`)};

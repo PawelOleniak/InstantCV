@@ -18,8 +18,8 @@ const education = {
 
   elements: [
     ['AGH University of Science and Technology'],
-    ['Automatyka I Robotyka', <div>{'2019-2021'}</div>, 'Resignation due to a change of interests'],
-    ['Inżynieria Obliczeniowa', <div>{'2020- present'}</div>, ''],
+    ['Automatyka I Robotyka', '2019-2021', 'Resignation due to a change of interests'],
+    ['Inżynieria Obliczeniowa', '2020- present', ''],
   ],
 };
 
@@ -81,8 +81,8 @@ export const skillsElements = [
 
 export const introHeaders = ['Introduction', 'Education'];
 export const personalData = [
-  { header: 'Contact', elements: ['pawel.oleniak00@wp.pl', <a href="tel:+48739669792">739669792</a>] },
+  { header: 'Contact', elements: ['pawel.oleniak00@wp.pl', 739669792] },
   { header: 'Adress', elements: ['Witolda Budryka 1,30-072 Kraków'] },
   { header: 'Date of Birth', elements: ['14.01.2000'] },
 ];
-export const introSection = { Me, paragraphs: [introduction, availability, education] };
+export const introSection = { Me, introduction, availability, education };

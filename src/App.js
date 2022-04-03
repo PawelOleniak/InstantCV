@@ -1,9 +1,9 @@
-import { useRef, useContext } from 'react';
+import React, { useRef, useContext } from 'react';
+import DeviceContextProvider, { Context } from 'context';
+import theme from 'utils/theme';
 import { GlobalStyle, MainContainer, MarginContainer } from 'AppCss';
 import { DetailSection, IntroduceSection, SkillsSection } from 'sections';
 import { ThemeProvider } from 'styled-components';
-import DeviceContextProvider, { Context } from 'context';
-import theme from 'utils/theme';
 
 function App() {
   const detailRef = useRef(null);
@@ -11,13 +11,14 @@ function App() {
   return (
     <>
       <GlobalStyle isMobile={isMobile} isBig={isBig} />
+
       <MarginContainer isMobile={isMobile}>
         <MainContainer>
           <SkillsSection refD={detailRef} />
           <IntroduceSection />
         </MainContainer>
+        <DetailSection refD={detailRef}></DetailSection>
       </MarginContainer>
-      <DetailSection refD={detailRef}></DetailSection>
     </>
   );
 }
