@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/InstantCV/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/InstantCV/static/js/main.2b85beb8.chunk.js",
-    "main.js.map": "/InstantCV/static/js/main.2b85beb8.chunk.js.map",
+    "main.js": "/InstantCV/static/js/main.ec54aefd.chunk.js",
+    "main.js.map": "/InstantCV/static/js/main.ec54aefd.chunk.js.map",
     "runtime-main.js": "/InstantCV/static/js/runtime-main.8d3ae670.js",
     "runtime-main.js.map": "/InstantCV/static/js/runtime-main.8d3ae670.js.map",
-    "static/js/2.75009762.chunk.js": "/InstantCV/static/js/2.75009762.chunk.js",
-    "static/js/2.75009762.chunk.js.map": "/InstantCV/static/js/2.75009762.chunk.js.map",
+    "static/js/2.62e47991.chunk.js": "/InstantCV/static/js/2.62e47991.chunk.js",
+    "static/js/2.62e47991.chunk.js.map": "/InstantCV/static/js/2.62e47991.chunk.js.map",
     "static/js/3.fe51ecdb.chunk.js": "/InstantCV/static/js/3.fe51ecdb.chunk.js",
     "static/js/3.fe51ecdb.chunk.js.map": "/InstantCV/static/js/3.fe51ecdb.chunk.js.map",
     "index.html": "/InstantCV/index.html",
     "static/css/main.6dea0f05.chunk.css.map": "/InstantCV/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.75009762.chunk.js.LICENSE.txt": "/InstantCV/static/js/2.75009762.chunk.js.LICENSE.txt"
+    "static/js/2.62e47991.chunk.js.LICENSE.txt": "/InstantCV/static/js/2.62e47991.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8d3ae670.js",
-    "static/js/2.75009762.chunk.js",
+    "static/js/2.62e47991.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.2b85beb8.chunk.js"
+    "static/js/main.ec54aefd.chunk.js"
   ]
 }
