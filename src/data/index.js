@@ -1,6 +1,6 @@
 import { IoLogoJavascript, IoLogoCss3, IoLogoHtml5 } from 'react-icons/io';
 import { DiUbuntu, DiReact, DiPython, DiJava, DiDatabase } from 'react-icons/di';
-import { SiStyledcomponents, SiFirebase } from 'react-icons/si';
+import { SiStyledcomponents, SiFirebase, SiRedux } from 'react-icons/si';
 import { AiOutlineBarChart } from 'react-icons/ai';
 import { BsGithub, BsFillBootstrapFill, BsPhone } from 'react-icons/bs';
 import Flags from 'country-flag-icons/react/3x2';
@@ -29,6 +29,7 @@ const wellKnownSkills = [
   { skillName: 'Css', icon: <IoLogoCss3 color={'#2b58b6'} /> },
   { skillName: 'Javascript', icon: <IoLogoJavascript color={'yellow'} /> },
   { skillName: 'Styled Components', icon: <SiStyledcomponents color={'#d0c019'} /> },
+  { skillName: 'Redux', icon: <SiRedux color={'#4B8BBE'} /> },
 ];
 const softwareSkills = [...wellKnownSkills, React];
 
@@ -62,7 +63,7 @@ const familiarDetails = [
 
 export const detailsElements = [
   wellKnownSkills,
-  [...[React, ...otherITSkills], ...otherLangauageDetails],
+  [...[React], ...otherLangauageDetails, ...[...otherITSkills]],
   familiarDetails,
 ];
 export const detailsHeaders = [
