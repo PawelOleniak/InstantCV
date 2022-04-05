@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/InstantCV/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/InstantCV/static/js/main.b0eb573a.chunk.js",
-    "main.js.map": "/InstantCV/static/js/main.b0eb573a.chunk.js.map",
-    "runtime-main.js": "/InstantCV/static/js/runtime-main.8d3ae670.js",
-    "runtime-main.js.map": "/InstantCV/static/js/runtime-main.8d3ae670.js.map",
-    "static/js/2.d2c649fb.chunk.js": "/InstantCV/static/js/2.d2c649fb.chunk.js",
-    "static/js/2.d2c649fb.chunk.js.map": "/InstantCV/static/js/2.d2c649fb.chunk.js.map",
-    "static/js/3.fe51ecdb.chunk.js": "/InstantCV/static/js/3.fe51ecdb.chunk.js",
-    "static/js/3.fe51ecdb.chunk.js.map": "/InstantCV/static/js/3.fe51ecdb.chunk.js.map",
+    "main.js": "/InstantCV/static/js/main.a6f2b60a.chunk.js",
+    "main.js.map": "/InstantCV/static/js/main.a6f2b60a.chunk.js.map",
+    "runtime-main.js": "/InstantCV/static/js/runtime-main.8cf2db7f.js",
+    "runtime-main.js.map": "/InstantCV/static/js/runtime-main.8cf2db7f.js.map",
+    "static/js/2.33cd6e8e.chunk.js": "/InstantCV/static/js/2.33cd6e8e.chunk.js",
+    "static/js/2.33cd6e8e.chunk.js.map": "/InstantCV/static/js/2.33cd6e8e.chunk.js.map",
+    "static/js/3.05f4122f.chunk.js": "/InstantCV/static/js/3.05f4122f.chunk.js",
+    "static/js/3.05f4122f.chunk.js.map": "/InstantCV/static/js/3.05f4122f.chunk.js.map",
     "index.html": "/InstantCV/index.html",
     "static/css/main.6dea0f05.chunk.css.map": "/InstantCV/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.d2c649fb.chunk.js.LICENSE.txt": "/InstantCV/static/js/2.d2c649fb.chunk.js.LICENSE.txt"
+    "static/js/2.33cd6e8e.chunk.js.LICENSE.txt": "/InstantCV/static/js/2.33cd6e8e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.8d3ae670.js",
-    "static/js/2.d2c649fb.chunk.js",
+    "static/js/runtime-main.8cf2db7f.js",
+    "static/js/2.33cd6e8e.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.b0eb573a.chunk.js"
+    "static/js/main.a6f2b60a.chunk.js"
   ]
 }
