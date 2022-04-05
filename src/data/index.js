@@ -9,7 +9,7 @@ const Me = 'Paweł Oleniak';
 const introduction = {
   header: 'Profile',
   elements: [
-    "I'm a aspiring frontend developer, who wants to develop and gain experience. I started from making simple sites with HTML and JS. Later continued by learning React. Now I'm working to grasp D3 with purpose of creating own Geneaological Tree Component",
+    "I'm a aspiring frontend developer, who wants to improve and gain experience. I started from making simple sites with HTML and JS. Later continued by learning React. Now I'm working on developing my Geneaological Tree App",
   ],
 };
 const availability = { header: 'Availability:', elements: ['Immediately'] };
@@ -24,14 +24,14 @@ const education = {
 };
 
 const React = { skillName: 'React', icon: <DiReact color={'#00bcd4'} /> };
+const Redux = { skillName: 'Redux', icon: <SiRedux color={'#4B8BBE'} /> };
 const wellKnownSkills = [
   { skillName: 'HTML', icon: <IoLogoHtml5 color={'red'} /> },
   { skillName: 'Css', icon: <IoLogoCss3 color={'#2b58b6'} /> },
   { skillName: 'Javascript', icon: <IoLogoJavascript color={'yellow'} /> },
   { skillName: 'Styled Components', icon: <SiStyledcomponents color={'#d0c019'} /> },
-  { skillName: 'Redux', icon: <SiRedux color={'#4B8BBE'} /> },
 ];
-const softwareSkills = [...wellKnownSkills, React];
+const softwareSkills = [...wellKnownSkills, React, Redux];
 
 const otherITSkills = [
   { skillName: 'Linux terminal', icon: <DiUbuntu color={'#dd4814'} /> },
@@ -63,7 +63,7 @@ const familiarDetails = [
 
 export const detailsElements = [
   wellKnownSkills,
-  [...[React], ...otherLangauageDetails, ...[...otherITSkills]],
+  [React, Redux, ...otherLangauageDetails, ...otherITSkills],
   familiarDetails,
 ];
 export const detailsHeaders = [
