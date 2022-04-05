@@ -3,6 +3,8 @@ import { DiUbuntu, DiReact, DiPython, DiJava, DiDatabase } from 'react-icons/di'
 import { SiStyledcomponents, SiFirebase, SiRedux } from 'react-icons/si';
 import { AiOutlineBarChart } from 'react-icons/ai';
 import { BsGithub, BsFillBootstrapFill, BsPhone } from 'react-icons/bs';
+import { ImTree } from 'react-icons/im';
+import { FaCarSide } from 'react-icons/fa';
 import Flags from 'country-flag-icons/react/3x2';
 
 const Me = 'Paweł Oleniak';
@@ -60,6 +62,19 @@ const familiarDetails = [
     ),
   },
 ];
+export const projects = [
+  {
+    skillName: 'Vehicle app',
+    icon: <FaCarSide color={'#EB8B3E'} />,
+    link: 'https://sql-vehicle-project.herokuapp.com/',
+  },
+  {
+    skillName: 'Genealogical Tree',
+    icon: <ImTree color={'02A5a8 '} />,
+    link: 'https://genealogical-tree-72ebc.web.app/',
+  },
+];
+export const projectHeader = { header: 'Projects', description: 'Few of my last projects' };
 
 export const detailsElements = [
   wellKnownSkills,

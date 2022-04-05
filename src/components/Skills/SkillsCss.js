@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 export const SkillsContainer = styled.div`
+  a {
+    text-decoration: none;
+    color: white;
+  }
   span {
     background-color: ${({ details }) => (details ? '' : '#ba0356')};
     width: fit-content;
