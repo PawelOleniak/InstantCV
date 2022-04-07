@@ -20,10 +20,13 @@ export const SkillsContainer = styled.div`
   }
 `;
 export const InlineSkill = styled.div`
-  display: flex;
-  align-items: center;
-  justify-self: center;
   margin-bottom: 10px;
+  a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+  }
 `;
 
 export const Detail = styled.div`
