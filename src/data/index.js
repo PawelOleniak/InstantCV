@@ -97,7 +97,7 @@ export const skillsElements = [
 
 export const introHeaders = ['Introduction', 'Education'];
 export const personalData = [
-  { header: 'Contact', elements: ['pawel.oleniak00@wp.pl', 739669792] },
+  { header: 'Contact', elements: ['paweloleniak@student.agh.edu.pl', 739669792] },
   { header: 'Adress', elements: ['Witolda Budryka 1,30-072 Kraków'] },
   { header: 'Date of Birth', elements: ['14.01.2000'] },
 ];
