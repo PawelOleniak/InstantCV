@@ -1,10 +1,10 @@
 import { IoLogoJavascript, IoLogoCss3, IoLogoHtml5 } from 'react-icons/io';
 import { DiUbuntu, DiReact, DiPython, DiJava, DiDatabase } from 'react-icons/di';
-import { SiStyledcomponents, SiFirebase, SiRedux } from 'react-icons/si';
+import { SiStyledcomponents, SiFirebase, SiRedux, SiTypescript } from 'react-icons/si';
 import { AiOutlineBarChart } from 'react-icons/ai';
-import { BsGithub, BsFillBootstrapFill, BsPhone } from 'react-icons/bs';
+import { BsGithub, BsPhone } from 'react-icons/bs';
 import { ImTree } from 'react-icons/im';
-import { FaCarSide } from 'react-icons/fa';
+import { FaCarSide, FaNodeJs } from 'react-icons/fa';
 import Flags from 'country-flag-icons/react/3x2';
 
 const Me = 'Paweł Oleniak';
@@ -36,9 +36,9 @@ const wellKnownSkills = [
 const softwareSkills = [...wellKnownSkills, React, Redux];
 
 const otherITSkills = [
-  { skillName: 'Linux terminal', icon: <DiUbuntu color={'#dd4814'} /> },
   { skillName: 'Git', icon: <BsGithub color={'#222'} /> },
   { skillName: 'RWD', icon: <BsPhone color={'#222'} /> },
+  { skillName: 'Linux terminal', icon: <DiUbuntu color={'#dd4814'} /> },
 ];
 
 const languages = [
@@ -46,21 +46,22 @@ const languages = [
   { skillName: 'English B2', icon: <Flags.GB width={20} /> },
 ];
 const otherLangauageDetails = [
-  { skillName: 'Python', icon: <DiPython color={'#4B8BBE'} /> },
-  { skillName: 'Java', icon: <DiJava color={'#f89820 '} /> },
   { skillName: 'Firebase', icon: <SiFirebase color={'orange '} /> },
   { skillName: 'SQL', icon: <DiDatabase color={'lightgray '} /> },
+  { skillName: 'Python', icon: <DiPython color={'#4B8BBE'} /> },
+  { skillName: 'Java', icon: <DiJava color={'#f89820 '} /> },
 ];
 const familiarDetails = [
-  { skillName: 'D3.js', icon: <AiOutlineBarChart color={'#4B8BBE'} /> },
   {
-    skillName: 'React Bootstrap',
+    skillName: 'TypeScript in React',
     icon: (
       <>
-        <BsFillBootstrapFill color={'0275d8 '} /> <DiReact color={'#00bcd4'} />
+        <SiTypescript color={'0275d8 '} /> <DiReact color={'#00bcd4'} />
       </>
     ),
   },
+  { skillName: 'Node', icon: <FaNodeJs color={'green'} /> },
+  { skillName: 'D3.js', icon: <AiOutlineBarChart color={'#4B8BBE'} /> },
 ];
 export const projects = [
   {
@@ -97,7 +98,7 @@ export const skillsElements = [
 
 export const introHeaders = ['Introduction', 'Education'];
 export const personalData = [
-  { header: 'Contact', elements: ['paweloleniak@student.agh.edu.pl', 739669792] },
+  { header: 'Contact', elements: ['paweloleniak\n@student.agh.edu.pl', 739669792] },
   { header: 'Adress', elements: ['Witolda Budryka 1,30-072 Kraków'] },
   { header: 'Date of Birth', elements: ['14.01.2000'] },
 ];
